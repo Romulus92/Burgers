@@ -1,0 +1,106 @@
+.team {
+    height: 100vh;
+    background: url(../../img/team.png);
+    background-size: cover;
+}
+
+.team__container {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    background-color: rgba(49, 52, 54, .93);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+} 
+
+.team__content {
+    margin-left: 80px;
+}
+
+.team__title {
+    color: #f9b43b;
+    font-family: 'Gagalin', Arial, Helvetica, sans-serif;
+    font-size: 72px;
+    line-height: 64px;
+}
+
+.team__name {
+    color: white;
+    font-family: 'Gagalin', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 28px;
+    text-transform: uppercase;
+    padding-left: 20px;
+    cursor: pointer;
+    position: relative;
+
+    &::before {
+        content:"";
+        display: block;
+        position: absolute;
+        top: 7px;
+        border: 5px solid transparent;
+        border-width: 5px 5px 5px 5px;
+        border-top-color: #f9b43b; 
+    }
+}
+
+.team__about {
+    margin-left: 20px;
+}
+
+.team__occupation {
+    color: white;
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.team__text {
+    color: white;
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.team__avatar {
+    background: url(../../img/aphex.png);
+    height: 100px;
+    min-width: 100px;
+    border-radius: 50%;
+    background-position: center center;
+    background-size: cover;
+}
+
+.team__description {
+    display: flex;
+    overflow: hidden;
+    align-items: flex-start;
+    width: 350px;
+    transition: 1s;
+    margin-top: 15px;
+    height: 0;
+}
+
+.team__item--active .team__description {
+    height: 140px;
+}
+
+.team__item--active .team__name {
+    color: #f9b43b;
+
+    &::before {
+        content:"";
+        display: block;
+        position: absolute;
+        top: 2px;
+        border: 5px solid transparent;
+        border-width: 5px 5px 5px 5px;
+        border-bottom-color: #f9b43b; 
+    }
+}
+

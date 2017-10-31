@@ -9,6 +9,7 @@
 	height:50vh;
 	overflow: hidden;
 	position: relative;
+	min-height: 325px;
 
 	&:hover {
 		.reviews__wrap {
