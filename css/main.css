@@ -439,7 +439,7 @@ ul {
 
 .team {
   height: 100vh;
-  background: url(img/team.png);
+  background: url(../img/team.png);
   background-size: cover; }
 
 .team__container {
@@ -506,7 +506,7 @@ ul {
   line-height: 24px; }
 
 .team__avatar {
-  background: url(img/aphex.png);
+  background: url(../img/aphex.png);
   height: 100px;
   min-width: 100px;
   border-radius: 50%;
