@@ -2,10 +2,13 @@
     height: 100vh;
     background: url(../img/team.png);
     background-size: cover;
+    position: relative;
 }
 
 .team__container {
     position: absolute;
+    top: 0;
+    bottom: 0;
     right: 0;
     height: 100%;
     width: 50%;
@@ -13,7 +16,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-} 
+}
 
 .team__content {
     margin-left: 80px;
@@ -35,15 +38,14 @@
     padding-left: 20px;
     cursor: pointer;
     position: relative;
-
     &::before {
-        content:"";
+        content: "";
         display: block;
         position: absolute;
         top: 7px;
         border: 5px solid transparent;
         border-width: 5px 5px 5px 5px;
-        border-top-color: #f9b43b; 
+        border-top-color: #f9b43b;
     }
 }
 
@@ -92,15 +94,13 @@
 
 .team__item--active .team__name {
     color: #f9b43b;
-
     &::before {
-        content:"";
+        content: "";
         display: block;
         position: absolute;
         top: 2px;
         border: 5px solid transparent;
         border-width: 5px 5px 5px 5px;
-        border-bottom-color: #f9b43b; 
+        border-bottom-color: #f9b43b;
     }
 }
-
