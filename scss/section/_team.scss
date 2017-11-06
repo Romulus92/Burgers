@@ -19,60 +19,60 @@
 }
 
 .team__content {
-    margin-left: 80px;
+    margin-left: rem(80px);
 }
 
 .team__title {
     color: #f9b43b;
     font-family: 'Gagalin', Arial, Helvetica, sans-serif;
-    font-size: 72px;
-    line-height: 64px;
+    font-size: rem(72px);
+    line-height: rem(64px);
 }
 
 .team__name {
     color: white;
     font-family: 'Gagalin', Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    line-height: 28px;
+    font-size: rem(14px);
+    line-height: rem(28px);
     text-transform: uppercase;
-    padding-left: 20px;
+    padding-left: rem(20px);
     cursor: pointer;
     position: relative;
     &::before {
         content: "";
         display: block;
         position: absolute;
-        top: 7px;
-        border: 5px solid transparent;
-        border-width: 5px 5px 5px 5px;
+        top: rem(7px);
+        border: rem(5px) solid transparent;
+        border-width: rem(5px) rem(5px) rem(5px) rem(5px);
         border-top-color: #f9b43b;
     }
 }
 
 .team__about {
-    margin-left: 20px;
+    margin-left: rem(20px);
 }
 
 .team__occupation {
     color: white;
     font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
     font-weight: 900;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: rem(14px);
+    line-height: rem(24px);
 }
 
 .team__text {
     color: white;
     font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
     font-weight: 300;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: rem(14px);
+    line-height: rem(24px);
 }
 
 .team__avatar {
     background: url(../img/aphex.png);
-    height: 100px;
-    min-width: 100px;
+    height: rem(100px);
+    min-width: rem(100px);
     border-radius: 50%;
     background-position: center center;
     background-size: cover;
@@ -82,14 +82,14 @@
     display: flex;
     overflow: hidden;
     align-items: flex-start;
-    width: 350px;
+    width: rem(350px);
     transition: 1s;
-    margin-top: 15px;
+    margin-top: rem(15px);
     height: 0;
 }
 
 .team__item--active .team__description {
-    height: 140px;
+    height: rem(140px);
 }
 
 .team__item--active .team__name {
@@ -98,9 +98,9 @@
         content: "";
         display: block;
         position: absolute;
-        top: 2px;
-        border: 5px solid transparent;
-        border-width: 5px 5px 5px 5px;
+        top: rem(2px);
+        border: rem(5px) solid transparent;
+        border-width: rem(5px) rem(5px) rem(5px) rem(5px);
         border-bottom-color: #f9b43b;
     }
 }

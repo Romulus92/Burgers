@@ -50,9 +50,9 @@
                         </div>
                     </div>
                     <div class="arrow">
-                        <a class="arrow__link" href="">
-                            <img class="arrow__img" src="img/arrow-scroll.svg" alt="">
-                        </a>
+                        <svg class="arrow__img" style="fill: #fff">
+                            <use xlink:href="../img/sprite.svg#arrow-scroll"></use>
+                        </svg>
                     </div>
                 </div>
             </section>
@@ -62,21 +62,27 @@
                     <div class="advantages">
                         <div class="advantage">
                             <div class="advantage__image">
-                                <img src="img/meat.svg" alt="" class="advantage__image-img">
+                                <svg class="advantage__image--img" style="fill: #e25028">
+                                    <use xlink:href="../img/sprite.svg#meat"></use>
+                                </svg>
                             </div>
                             <span class="advantage__heading">100% свежее мясо</span>
                             <p class="advantage__description">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</p>
                         </div>
                         <div class="advantage">
                             <div class="advantage__image">
-                                <img src="img/hand.svg" alt="" class="advantage__image-img">
+                                <svg class="advantage__image--img" style="fill: #f8b43a">
+                                    <use xlink:href="../img/sprite.svg#hand"></use>
+                                </svg>
                             </div>
                             <span class="advantage__heading">Ручная  сборка</span>
                             <p class="advantage__description">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.</p>
                         </div>
                         <div class="advantage">
                             <div class="advantage__image">
-                                <img src="img/natural.svg" alt="" class="advantage__image-img">
+                                <svg class="advantage__image--img" style="fill: #8ac03e">
+                                    <use xlink:href="../img/sprite.svg#natural"></use>
+                                </svg>
                             </div>
                             <span class="advantage__heading">Натуральные ингредиенты</span>
                             <p class="advantage__description">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</p>
@@ -256,93 +262,133 @@
                     </div>
                 </div>
             </section>
-            <section class="section form">
-                <div class="container form__container">
-                    <h2 class="form__heading">Закажите доставку</h2>
-                    <div class="form__wrap">
-                        <form action="" class="form__elem">
-                            <div class="form__content">
-                                <div class="form__side">
-                                    <div class="form__row">
-                                        <label for="" class="form__block">
-                                            <div class="form__block--title">Имя</div>
-                                            <input type="text" class="form__input">
-                                        </label>
-                                        <label for="" class="form__block">
-                                            <div class="form__block--title">Телефон</div>
-                                            <input type="text" class="form__input">
-                                        </label>
-                                    </div>
-                                    <div class="form__row">
-                                        <label for="" class="form__block">
-                                            <div class="form__block--title">Улица</div>
-                                            <input type="text" class="form__input">
-                                        </label>
-                                    </div>
-                                    <div class="form__row">
-                                        <label for="" class="form__block">
-                                            <div class="form__block--title">Дом</div>
-                                            <input type="text" class="form__input">
-                                        </label>
-                                        <label for="" class="form__block">
-                                            <div class="form__block--title">Корпус</div>
-                                            <input type="text" class="form__input">
-                                        </label>
-                                        <label for="" class="form__block">
-                                            <div class="form__block--title">Квартира</div>
-                                            <input type="text" class="form__input">
-                                        </label>
-                                        <label for="" class="form__block">
-                                            <div class="form__block--title">Этаж</div>
-                                            <input type="text" class="form__input">
-                                        </label>
-                                    </div>
+            <section class="section order">
+                <div class="container">
+                    <div class="section__title">Закажите доставку</div>
+                    <form class="order__form-tag" id="order-form">
+                        <div class="order__form">
+                            <div class="order__form-col">
+                                <div class="order__form-row">
+                                    <label class="order__form-block">
+                                      <div class="order__form-label">Имя</div>
+                                      <input class="order__form-input" name="name" type="text" placeholder="">
+                                    </label>
+                                    <label class="order__form-block">
+                                      <div class="order__form-label">Телефон</div>
+                                      <input class="order__form-input phone-mask" name="phone" type="text" placeholder="">
+                                    </label>
                                 </div>
-                                <div class="form__side">
-                                    <div class="form__row">
-                                        <label for="" class="form__block">
-                                            <div class="form__block--title">Комментарий</div>
-                                            <textarea class="form__text-area"></textarea>
-                                        </label>
+                                <div class="order__form-row">
+                                    <label class="order__form-block">
+                                      <div class="order__form-label">Улица</div>
+                                      <input class="order__form-input" name="street" type="text" placeholder="">
+                                    </label>
+                                </div>
+                                <div class="order__form-row">
+                                    <label class="order__form-block">
+                                      <div class="order__form-label">Дом</div>
+                                      <input class="order__form-input" name="home" type="text" placeholder="">
+                                    </label>
+                                    <label class="order__form-block">
+                                      <div class="order__form-label">Корпус</div>
+                                      <input class="order__form-input" name="part" type="text" placeholder="">
+                                    </label>
+                                    <label class="order__form-block">
+                                      <div class="order__form-label">Квартира</div>
+                                      <input class="order__form-input" name="appt" type="text" placeholder="">
+                                    </label>
+                                    <label class="order__form-block">
+                                      <div class="order__form-label">Этаж</div>
+                                      <input class="order__form-input" name="floor" type="text" placeholder="">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="order__form-col">
+                                <div class="order__form-row">
+                                    <label class="order__form-block">
+                                      <div class="order__form-label">Комментарий</div>
+                                      <textarea class="order__form-input order__form-input_textarea" name="comment"></textarea>
+                                    </label>
+                                </div>
+                                <div class="order__form-buttons">
+                                    <div class="order__form-row">
+                                        <label class="order__radio">
+                                        <input class="order__radio-elem" name="payment" type="radio">
+                                        <div class="order__radio-fake"></div>
+                                        <div class="order__radio-title">Потребуется сдача</div>
+                                      </label>
+                                        <label class="order__radio">
+                                        <input class="order__radio-elem" name="payment" type="radio">
+                                        <div class="order__radio-fake"></div>
+                                        <div class="order__radio-title">Оплата по карте</div>
+                                      </label>
                                     </div>
-                                    <div class="form__row">
-                                        <label class="form__block" for="yes">
-                                            <input type="radio" id="yes">
-                                            <div class="form__block--title">Потребуется сдача</div>
-                                        </label>
-                                        <label class="form__block" for="yes">
-                                            <input type="radio" id="yes">
-                                            <div class="form__block--title">Оплата по карте</div>
-                                        </label>
+                                    <div class="order__form-row">
+                                        <label class="order__radio order__radio_checkbox">
+                                        <input class="order__radio-elem" name="callback" type="checkbox">
+                                        <div class="order__radio-fake"></div>
+                                        <div class="order__radio-title">Не перезванивать</div>
+                                      </label>
                                     </div>
-                                    <div class="form__row">
-                                        <label class="form__block" for="yes">
-                                            <input type="checkbox" id="yes">
-                                            <div class="form__block--title">Не перезванивать</div>
-                                        </label>
-                                    </div>
-                                    <div class="form__row">
-                                        <div class="header__btn"><a class="order-link" href="" data-goto="6">Заказать</a></div>
-                                        <a href="#" class="form__clear">Очистить</a>
+                                    <div class="order__form-row">
+                                        <input class="order__form-button" name="" type="submit" value="Заказать">
+                                        <input class="order__form-button order__form-button_reset" name="" type="reset" value="Очистить">
                                     </div>
                                 </div>
                             </div>
-                        </form>
-                    </div>
+                        </div>
+                    </form>
                 </div>
             </section>
             <section class="section contacts">
                 <footer class="footer">
                     <div class="container container__contacts">
-                        <div class="contacts__info">
+                        <div class="contacts__content">
                             <span class="contacts__adress">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</span>
-                            <span class="contacts__phone">+7 (812) 377-13-77</span>
+                            <a class="contacts__phone" href="tel:+78123771377">
+                                <svg class="contacts__link-phone" style="fill: #e45028">
+                                    <use xlink:href="../img/sprite.svg#phone"></use>
+                                </svg>
+                                <span>+7 (812) 377-13-77</span>
+                            </a>
                         </div>
-                        <div class="contacts__socials">
-                            <div class="social"></div>
-                            <div class="social"></div>
-                            <div class="social"></div>
-                            <div class="social"></div>
+                        <div class="contacts__content contacts__content--right">
+                            <ul class="socials">
+                                <li class="socials__item">
+                                    <a class="socials__link" href="#">
+                                        <svg class="socials__link-icon" style="fill: #fff">
+                                            <use xlink:href="../img/sprite.svg#vk"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="socials">
+                                <li class="socials__item">
+                                    <a class="socials__link" href="#">
+                                        <svg class="socials__link-icon" style="fill: #fff">
+                                            <use xlink:href="../img/sprite.svg#fb"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="socials">
+                                <li class="socials__item">
+                                    <a class="socials__link" href="#">
+                                        <svg class="socials__link-icon" style="fill: #fff">
+                                            <use xlink:href="../img/sprite.svg#inst"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="socials">
+                                <li class="socials__item">
+                                    <a class="socials__link" href="#">
+                                        <svg class="socials__link-icon" style="fill: #fff">
+                                            <use xlink:href="./img/sprite.svg#twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </footer>

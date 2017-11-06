@@ -1,36 +1,35 @@
 .reviews__container {
-	width: 100%;
-	flex-direction: row;
-	flex-wrap: wrap;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .review {
-	width:25%;
-	height:50vh;
-	overflow: hidden;
-	position: relative;
-	min-height: 325px;
-
-	&:hover {
-		.reviews__wrap {
-			opacity: 1;
-		}
-	}
+    width: 25%;
+    height: 50vh;
+    overflow: hidden;
+    position: relative;
+    min-height: rem(325px);
+    &:hover {
+        .reviews__wrap {
+            opacity: 1;
+        }
+    }
 }
 
 .review__more {
-	display: block;
+    display: block;
 }
 
 .review__img {
-	position: absolute;
-	display: block;
-	width: 100%;
+    position: absolute;
+    display: block;
+    width: 100%;
 }
 
 .reviews__wrap {
-	opacity: 0;
-    padding: 41px 20px;
+    opacity: 0;
+    padding: rem(41px) rem(20px);
     position: absolute;
     top: 0;
     bottom: 0;
@@ -39,36 +38,34 @@
 }
 
 .review__name {
-	font-size: 14px;
-	line-height: 28px;
-	font-family: 'Gagalin', Arial, Helvetica, sans-serif;
-	color: #fff;
+    font-size: rem(14px);
+    line-height: rem(28px);
+    font-family: 'Gagalin', Arial, Helvetica, sans-serif;
+    color: #fff;
 }
 
 .review__desc {
-	font-size: 14px;
-	line-height: 24px;
-	font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
-	font-weight: 300;
-	color: #fff;
+    font-size: rem(14px);
+    line-height: rem(24px);
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    color: #fff;
 }
 
 .review__more {
-	width: 111px;
-	height: 35px;
-	background-color: #2f3234;
-	font-size: 13px;
-	line-height: 30px;
-	text-transform: uppercase;
-	font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
-	text-decoration: none;
+    width: rem(111px);
+    height: rem(35px);
+    background-color: #2f3234;
+    font-size: rem(13px);
+    line-height: rem(30px);
+    text-transform: uppercase;
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    text-decoration: none;
     text-transform: uppercase;
     color: #fff;
-    padding: 3px 15px;
+    padding: rem(3px) rem(15px);
     transition: background-color .2s ease-out;
-
     &:hover {
-    	background-color: #1f2122;
+        background-color: #1f2122;
     }
 }
-

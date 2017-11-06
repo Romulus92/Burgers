@@ -11,10 +11,10 @@
 
 .menu__heading {
     position: absolute;
-    top: 110px;
-    left: 95px;
-    font-size: 72px;
-    line-height: 64px;
+    top: rem(110px);
+    left: rem(95px);
+    font-size: rem(72px);
+    line-height: rem(64px);
     font-family: 'Gagalin', Arial, Helvetica, sans-serif;
     color: white;
 }
@@ -36,7 +36,7 @@
     height: 100vh;
     display: flex;
     justify-content: space-around;
-    width: 80px;
+    width: rem(80px);
     cursor: pointer;
 }
 
@@ -59,8 +59,8 @@
     writing-mode: vertical-lr;
     transform: rotate(180deg);
     font-family: 'Gagalin', Arial, Helvetica, sans-serif;
-    font-size: 40px;
-    line-height: 64px;
+    font-size: rem(40px);
+    line-height: rem(64px);
     color: white;
     text-align: center;
 }
@@ -70,16 +70,16 @@
     overflow: hidden;
     background: rgba(53, 54, 55, 0.93);
     color: white;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: rem(14px);
+    line-height: rem(24px);
     font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
     font-weight: 300;
 }
 
 .menu__text {
-    padding: 61px 35px 50px 34px;
+    padding: rem(61px) rem(35px) rem(50px) rem(34px);
 }
 
 .menu__item--active .menu__occupation {
-    width: 540px;
+    width: rem(540px);
 }
