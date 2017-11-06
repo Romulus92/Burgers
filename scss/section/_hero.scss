@@ -80,18 +80,36 @@
     flex-grow: 1;
     align-items: center;
     padding-bottom: 15%;
+
+    @include tablets {
+        flex-direction: column;
+    }
 }
 
 .hero__img,
 .hero__description {
-    flex-basis: 50%;
+    width: 50%;
     display: flex;
+
+    @include tablets {
+        width: 100%;
+    }
 }
 
 .hero__description {
     flex-direction: column;
     justify-content: center;
     align-content: center;
+
+    @include tablets {
+        text-align: center;
+    }
+}
+
+.hero__img {
+    @include tablets {
+        justify-content: center;
+    }
 }
 
 .section__title {
@@ -125,7 +143,7 @@
 	height: rem(22px);
 	align-items: center;
 	margin-left: rem(30px);
-  display: none;
+    display: none;
 
   @include tablets() {
     display: flex;
