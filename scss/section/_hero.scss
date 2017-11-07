@@ -83,6 +83,7 @@
 
     @include tablets {
         flex-direction: column;
+        padding: 0 rem(150px);
     }
 }
 
@@ -96,6 +97,10 @@
     }
 }
 
+.hero__img--img {
+    max-width: 100%;
+}
+
 .hero__description {
     flex-direction: column;
     justify-content: center;
@@ -107,6 +112,7 @@
 }
 
 .hero__img {
+    justify-content: center;
     @include tablets {
         justify-content: center;
     }
