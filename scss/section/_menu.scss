@@ -17,6 +17,11 @@
     line-height: rem(64px);
     font-family: 'Gagalin', Arial, Helvetica, sans-serif;
     color: white;
+    @include phones {
+        font-size: rem(50px);
+        top: rem(15px);
+        left: rem(25px);
+    }
 }
 
 .menu__content {

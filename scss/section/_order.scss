@@ -5,17 +5,28 @@
     align-items: center;
     .section__title {
         text-align: center;
+        margin-bottom: rem(55px);
     }
 }
 
 .order__form {
-    margin-left: -5%;
     display: flex;
+    @include tablets {
+        flex-direction: column;
+    }
 }
 
 .order__form-col {
-    width: 45%;
-    margin-left: 5%;
+    width: 47%;
+    margin-left: 3%;
+    @include tablets {
+        width: 100%;
+        margin-left: 0;
+        padding: 0 15%;
+    }
+    @include phones {
+        padding: 0 1%;
+    }
 }
 
 .order__form-row {
@@ -43,12 +54,15 @@
     display: block;
     width: 100%;
     flex: 1;
-    margin-left: rem(10px);
+    margin-left: rem(20px);
 }
 
 .order__form-row {
     display: flex;
     margin-left: rem(-10px);
+    @include phones {
+        justify-content: center;
+    }
 }
 
 .order__form-input_textarea {
@@ -148,4 +162,11 @@
     padding-right: 0;
     text-transform: none;
     background: transparent;
+}
+
+.order__form-buttons {
+    padding: 0 5%;
+    @include phones {
+        justify-content: center;
+    }
 }

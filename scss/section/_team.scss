@@ -23,6 +23,9 @@
 
 .team__content {
     margin-left: rem(80px);
+    @include tablets {
+        margin-left: 0;
+    }
 }
 
 .team__title {
@@ -30,6 +33,9 @@
     font-family: 'Gagalin', Arial, Helvetica, sans-serif;
     font-size: rem(72px);
     line-height: rem(64px);
+    @include tablets {
+        text-align: center;
+    }
 }
 
 .team__item {
@@ -47,9 +53,10 @@
     padding-left: rem(20px);
     cursor: pointer;
     position: relative;
+    margin-bottom: rem(5px);
     &::before {
         content: "";
-        display: inline-flex;
+        display: block;
         position: absolute;
         top: rem(7px);
         border: rem(5px) solid transparent;
@@ -108,6 +115,7 @@
     height: 0;
     @include tablets {
         flex-direction: column;
+        width: initial;
     }
 }
 
@@ -118,9 +126,13 @@
 
 .team__item--active .team__name {
     color: #f9b43b;
+    @include tablets {
+        align-items: center;
+        margin: 0 20%;
+    }
     &::before {
         content: "";
-        display: inline-flex;
+        display: block;
         position: absolute;
         top: rem(2px);
         border: rem(5px) solid transparent;
