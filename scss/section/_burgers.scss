@@ -120,6 +120,9 @@
     font-family: 'Gagalin', Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     line-height: rem(66px);
+    @include phones {
+        font-size: rem(36px);
+    }
 }
 
 .burger-description__text {

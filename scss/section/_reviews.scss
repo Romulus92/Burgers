@@ -81,6 +81,9 @@
         font-size: rem(24px);
         margin-bottom: rem(14px);
     }
+    @include phones {
+        margin-top: rem(-45px);
+    }
 }
 
 .review__shorttext {

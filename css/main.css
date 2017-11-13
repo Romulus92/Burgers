@@ -656,6 +656,9 @@ ul {
   font-family: 'Gagalin', Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   line-height: 4.125rem; }
+  @media screen and (max-width: 480px) {
+    .burger-description__heading {
+      font-size: 2.25rem; } }
 
 .burger-description__text {
   font-family: 'Ubuntu';
@@ -1066,6 +1069,9 @@ ul {
     .review__title {
       font-size: 1.5rem;
       margin-bottom: 0.875rem; } }
+  @media screen and (max-width: 480px) {
+    .review__title {
+      margin-top: -2.8125rem; } }
 
 .review__shorttext {
   color: #ffffff;
@@ -1108,6 +1114,10 @@ ul {
   .order .section__title {
     text-align: center;
     margin-bottom: 3.4375rem; }
+
+@media screen and (max-width: 480px) {
+  .order__title {
+    font-size: 2rem; } }
 
 .order__form {
   display: -webkit-box;

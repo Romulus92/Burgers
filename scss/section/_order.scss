@@ -9,6 +9,12 @@
     }
 }
 
+.order__title {
+    @include phones {
+        font-size: rem(32px);
+    }
+}
+
 .order__form {
     display: flex;
     @include tablets {
