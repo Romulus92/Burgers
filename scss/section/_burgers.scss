@@ -40,11 +40,70 @@
     position: absolute;
     top: 0;
     left: 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    &:hover {
+        background: #e35028;
+    }
+    &:hover+.burger-ingredients {
+        opacity: 1;
+    }
 }
 
 .burger-composition__img {
     width: rem(45px);
     height: rem(40px);
+}
+
+.burger-ingredients {
+    width: rem(270px);
+    height: rem(330px);
+    background: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: 0;
+    left: rem(90px);
+    border-radius: 5px;
+    opacity: 0;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.burger-ingredients_item {
+    display: flex;
+    justify-content: space-between;
+    padding-left: rem(7px);
+    padding-top: rem(8px);
+    padding-right: rem(20px);
+    align-items: center;
+    font-size: rem(14px);
+}
+
+.burger-ingredients_item--first {
+    padding-top: rem(18px);
+}
+
+.burger-ingredients__picture {
+    width: rem(45px);
+    height: rem(45px);
+    display: inline-block;
+    align-content: center;
+    justify-content: center;
+}
+
+.burger-ingredients__picture--img {
+    width: rem(45px);
+    height: rem(45px);
+}
+
+.burger-ingredients__heading {
+    font-size: rem(14px);
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.burger-ingredients__amount {
+    font-size: rem(14px);
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    font-weight: 300;
 }
 
 .burger-composition__text {
