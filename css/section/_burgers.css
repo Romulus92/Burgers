@@ -1,0 +1,7 @@
+.slider__img {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: rem(29px);
+  height: rem(14px); }
