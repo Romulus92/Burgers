@@ -334,7 +334,8 @@ ul {
   -ms-flex-align: center;
   align-items: center;
   margin-left: 1.875rem;
-  display: none; }
+  display: none;
+  cursor: pointer; }
   @media screen and (max-width: 768px) {
     .hamburger-menu-link {
       display: -webkit-box;
@@ -456,9 +457,9 @@ ul {
     flex-direction: column;
     margin: auto auto;
     content: "";
-    width: 10px;
-    height: 10px;
-    border-radius: 5px;
+    width: 0.4375rem;
+    height: 0.4375rem;
+    border-radius: 0.3125rem;
     background-color: #fff; }
   .hamburger-menu__item:last-child:after {
     display: none; }

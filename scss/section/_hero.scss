@@ -160,6 +160,7 @@
     align-items: center;
     margin-left: rem(30px);
     display: none;
+    cursor: pointer;
     @include tablets() {
         display: flex;
     }
@@ -245,9 +246,9 @@
         flex-direction: column;
         margin: auto auto;
         content: "";
-        width: 10px;
-        height: 10px;
-        border-radius: 5px;
+        width: rem(7px);
+        height: rem(7px);
+        border-radius: rem(5px);
         background-color: #fff;
     }
     &:last-child:after {
