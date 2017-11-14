@@ -54,17 +54,20 @@
     cursor: pointer;
     position: relative;
     margin-bottom: rem(5px);
+    display: flex;
     &::before {
         content: "";
-        display: block;
+        display: inline-block;
         position: absolute;
-        top: rem(7px);
+        top: rem(12px);
+        left: rem(1px);
         border: rem(5px) solid transparent;
         border-width: rem(5px) rem(5px) rem(5px) rem(5px);
         border-top-color: #f9b43b;
     }
     @include tablets {
-        font-size: rem(25px);
+        margin: 0 35%;
+        font-size: rem(22px);
         line-height: rem(29px);
     }
 }
@@ -128,13 +131,13 @@
     color: #f9b43b;
     @include tablets {
         align-items: center;
-        margin: 0 20%;
+        margin: 0 35%;
     }
     &::before {
         content: "";
         display: block;
         position: absolute;
-        top: rem(2px);
+        top: rem(6px);
         border: rem(5px) solid transparent;
         border-width: rem(5px) rem(5px) rem(5px) rem(5px);
         border-bottom-color: #f9b43b;

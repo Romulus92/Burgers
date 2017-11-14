@@ -82,7 +82,6 @@
     padding-bottom: 15%;
     @include tablets {
         flex-direction: column;
-        padding: 0 rem(150px);
     }
     @include phones {
         padding: 0;
