@@ -64,7 +64,7 @@
     z-index: 10;
     @include tablets {
         font-size: rem(14px);
-        padding: 10% 12%;
+        padding: 5% 5%;
         text-align: center;
     }
     @include phones {
@@ -79,10 +79,16 @@
     margin-bottom: rem(25px);
     @include tablets {
         font-size: rem(24px);
-        margin-bottom: rem(14px);
+        margin-bottom: 0;
+        padding-left: rem(45px);
+        padding-right: rem(45px);
+        line-height: 1.1em;
     }
     @include phones {
         margin-top: rem(-45px);
+        padding: 0;
+        line-height: initial;
+        margin-bottom: rem(30px);
     }
 }
 
@@ -91,8 +97,14 @@
     font-size: rem(14px);
     @include ubuntu(light);
     margin-bottom: rem(13px);
+    @include tablets {
+        //padding-right: rem(10px);
+        //padding-left: rem(10px);
+        margin-bottom: rem(8px);
+    }
     @include phones {
         display: none;
+        margin-bottom: initial;
     }
 }
 
@@ -109,5 +121,27 @@
     transition: .3s;
     &:hover {
         background-color: rgb(31, 33, 34);
+    }
+    @include phones {
+        display: none;
+    }
+}
+
+.review__view-mobile {
+    border-radius: rem(5px);
+    background-color: rgb(47, 50, 52);
+    padding: rem(8px) rem(12px);
+    display: none;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    @include ubuntu(medium);
+    font-size: rem(12px);
+    transition: .3s;
+    &:hover {
+        background-color: rgb(31, 33, 34);
+    }
+    @include phones {
+        display: inline-block;
     }
 }

@@ -23,7 +23,7 @@
 }
 
 .contacts__content {
-    width: 50%;
+    width: 100%;
     margin-bottom: rem(15px);
     margin-top: rem(10px);
     @include phones {
@@ -31,7 +31,7 @@
     }
 }
 
-.footer__address {
+.contacts__adress {
     color: #ffffff;
     font-size: rem(14px);
 }

@@ -9,3 +9,15 @@ buttonBurger.addEventListener('click', function() {
 closeBurger.addEventListener('click', function() {
     burgerMenu.classList.remove('hamburger-menu__visible')
 })
+
+$(document).mouseup(function(e) {
+    if (!burgerMenu.hasAttribute(e.target).length) {
+        burgerMenu.classList.remove('hamburger-menu__visible')
+    }
+});
+
+$(document).keyup(function(e) {
+    if (e.which == 27) {
+        burgerMenu.classList.remove('hamburger-menu__visible')
+    }
+})

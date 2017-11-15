@@ -69,6 +69,10 @@
         margin: 0 35%;
         font-size: rem(22px);
         line-height: rem(29px);
+        width: 100%;
+    }
+    @include phones {
+        margin: 0 30%;
     }
 }
 
@@ -132,6 +136,10 @@
     @include tablets {
         align-items: center;
         margin: 0 35%;
+        width: 100%;
+    }
+    @include phones {
+        margin: 0 30%;
     }
     &::before {
         content: "";
