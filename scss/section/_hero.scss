@@ -268,3 +268,34 @@
         color: white;
     }
 }
+
+.menu-close {
+    display: block;
+    width: 18px;
+    height: 18px;
+    font-size: 0;
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 8px;
+        left: -3px;
+        width: 24px;
+        height: 3px;
+        background-color: #c1c2c2;
+        border-radius: 3px;
+        transform: rotate(45deg);
+    }
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 8px;
+        left: -3px;
+        width: 24px;
+        height: 3px;
+        background-color: #c1c2c2;
+        border-radius: 3px;
+        transform: rotate(-45deg);
+    }
+}
