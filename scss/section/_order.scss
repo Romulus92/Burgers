@@ -141,10 +141,13 @@
     .order__radio-elem:checked {
         &+.order__radio-fake {
             &:after {
-                background: url("../img/check.svg") 50% no-repeat transparent;
+                background: url("../img/check.svg") center center no-repeat;
                 background-size: contain;
-                width: rem(11px);
-                height: rem(9px);
+                width: rem(12px);
+                height: rem(10px);
+                content: "";
+                display: block;
+                position: absolute;
             }
         }
     }

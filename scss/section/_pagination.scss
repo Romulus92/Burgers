@@ -1,0 +1,36 @@
+.pagination {
+    position: fixed;
+    top: rem(90px);
+    right: rem(50px);
+    @include tablets {
+        display: none;
+    }
+}
+
+.pagination__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.pagination__item {
+    margin-bottom: rem(16px);
+    content: "";
+    width: rem(6px);
+    height: rem(6px);
+    border-radius: rem(3px);
+    background-color: white;
+    position: relative;
+}
+
+.pagination__item--active {
+    &::after {
+        content: '';
+        border-radius: 50%;
+        border: 0.0625rem solid #ffffff;
+        width: 0.9375rem;
+        height: 0.9375rem;
+        position: absolute;
+        top: -0.30rem;
+        left: -0.29rem;
+    }
+}
