@@ -117,7 +117,7 @@
     overflow: hidden;
     align-items: flex-start;
     width: rem(350px);
-    transition: 1s;
+    transition: all .5s ease-in-out;
     margin-top: rem(15px);
     height: 0;
     @include tablets {
@@ -127,7 +127,6 @@
 }
 
 .team__item--active .team__description {
-    height: 100%;
     align-items: center;
 }
 

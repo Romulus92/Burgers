@@ -1096,9 +1096,9 @@ ul {
   -ms-flex-align: start;
   align-items: flex-start;
   width: 21.875rem;
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  transition: 1s;
+  -webkit-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
   margin-top: 0.9375rem;
   height: 0; }
   @media screen and (max-width: 768px) {
@@ -1111,7 +1111,6 @@ ul {
       width: initial; } }
 
 .team__item--active .team__description {
-  height: 100%;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
@@ -1241,7 +1240,10 @@ ul {
   line-height: 1.5rem;
   font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
   font-weight: 300;
-  max-height: 100vh; }
+  max-height: 100vh;
+  -webkit-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out; }
 
 .menu__text {
   padding: 3.8125rem 2.1875rem 3.125rem 2.125rem; }
