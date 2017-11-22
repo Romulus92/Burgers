@@ -113,3 +113,24 @@ $(function() {
         }
     })
 })
+
+//fancybox
+$(function() {
+    $("[data-fancybox]").fancybox({
+        smallBtn: false
+    })
+})
+
+$(function() {
+    $('.send__button').on('click', e => {
+        e.preventDefault()
+        $.fancybox.close()
+    })
+})
+
+$(function() {
+    $('.full-review__close').on('click', e => {
+        e.preventDefault()
+        $.fancybox.close()
+    })
+})

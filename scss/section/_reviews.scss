@@ -119,6 +119,7 @@
     @include ubuntu(medium);
     font-size: rem(12px);
     transition: .3s;
+    cursor: pointer;
     &:hover {
         background-color: rgb(31, 33, 34);
     }
@@ -138,10 +139,70 @@
     @include ubuntu(medium);
     font-size: rem(12px);
     transition: .3s;
+    cursor: pointer;
     &:hover {
         background-color: rgb(31, 33, 34);
     }
     @include phones {
         display: inline-block;
+    }
+}
+
+#full-review {
+    width: rem(460px);
+}
+
+.full-review__heading {
+    font-size: rem(14px);
+    font-family: 'Gagalin', Arial, Helvetica, sans-serif;
+}
+
+.full-review__text {
+    font-size: rem(14px);
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+.full-review__close {
+    align-self: right;
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 18px;
+    height: 18px;
+    font-size: 0;
+    margin-top: rem(10px);
+    margin-right: rem(5px);
+    display: flex;
+    align-items: right;
+    cursor: pointer;
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 8px;
+        left: -3px;
+        width: 18px;
+        height: 3px;
+        background-color: #ec8468;
+        border-radius: 3px;
+        transform: rotate(45deg);
+    }
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 8px;
+        left: -3px;
+        width: 18px;
+        height: 3px;
+        background-color: #ec8468;
+        border-radius: 3px;
+        transform: rotate(-45deg);
+        color: initial;
+        font-weight: 300;
+        text-align: initial;
+        border-width: initial;
     }
 }

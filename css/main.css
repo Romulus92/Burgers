@@ -128,6 +128,9 @@ ul {
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
+.popup {
+  display: none; }
+
 .pagination {
   position: fixed;
   top: 5.625rem;
@@ -1376,7 +1379,8 @@ ul {
   font-size: 0.75rem;
   -webkit-transition: .3s;
   -o-transition: .3s;
-  transition: .3s; }
+  transition: .3s;
+  cursor: pointer; }
   .review__view:hover {
     background-color: #1f2122; }
   @media screen and (max-width: 480px) {
@@ -1396,12 +1400,78 @@ ul {
   font-size: 0.75rem;
   -webkit-transition: .3s;
   -o-transition: .3s;
-  transition: .3s; }
+  transition: .3s;
+  cursor: pointer; }
   .review__view-mobile:hover {
     background-color: #1f2122; }
   @media screen and (max-width: 480px) {
     .review__view-mobile {
       display: inline-block; } }
+
+#full-review {
+  width: 28.75rem; }
+
+.full-review__heading {
+  font-size: 0.875rem;
+  font-family: 'Gagalin', Arial, Helvetica, sans-serif; }
+
+.full-review__text {
+  font-size: 0.875rem;
+  font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+  font-weight: 300; }
+
+.full-review__close {
+  -webkit-align-self: right;
+  -ms-flex-item-align: right;
+  align-self: right;
+  display: block;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 18px;
+  height: 18px;
+  font-size: 0;
+  margin-top: 0.625rem;
+  margin-right: 0.3125rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: right;
+  -webkit-align-items: right;
+  -ms-flex-align: right;
+  align-items: right;
+  cursor: pointer; }
+  .full-review__close:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: -3px;
+    width: 18px;
+    height: 3px;
+    background-color: #ec8468;
+    border-radius: 3px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg); }
+  .full-review__close:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: -3px;
+    width: 18px;
+    height: 3px;
+    background-color: #ec8468;
+    border-radius: 3px;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    color: initial;
+    font-weight: 300;
+    text-align: initial;
+    border-width: initial; }
 
 .order {
   background: url("../img/bg/form_bg.png") 50% no-repeat;
@@ -1586,6 +1656,91 @@ ul {
       -webkit-justify-content: center;
       -ms-flex-pack: center;
       justify-content: center; } }
+
+#send {
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.send__text {
+  font-size: 0.875rem;
+  font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  margin-bottom: 1.25rem;
+  display: block; }
+
+.send__button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.order-link--send {
+  padding: 0.625rem 1.1875rem;
+  width: 5.9375rem; }
+
+.full-review__close {
+  -webkit-align-self: right;
+  -ms-flex-item-align: right;
+  align-self: right;
+  display: block;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 18px;
+  height: 18px;
+  font-size: 0;
+  margin-top: 0.625rem;
+  margin-right: 0.3125rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: right;
+  -webkit-align-items: right;
+  -ms-flex-align: right;
+  align-items: right; }
+  .full-review__close:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: -3px;
+    width: 18px;
+    height: 3px;
+    background-color: #ec8468;
+    border-radius: 3px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg); }
+  .full-review__close:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: -3px;
+    width: 18px;
+    height: 3px;
+    background-color: #ec8468;
+    border-radius: 3px;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    color: initial;
+    font-weight: 300;
+    text-align: initial;
+    border-width: initial; }
+
+.fancybox-close-small:hover:after {
+  background-color: #ec8468; }
 
 .contacts {
   background: url(../img/bg/contacts_bg.png) center bottom no-repeat;
