@@ -6,11 +6,14 @@
 .burgers__container {
     align-items: center;
     justify-content: center;
+    max-width: rem(1100px);
+    position: relative;
 }
 
 .burgers__content {
     display: flex;
     flex-direction: row;
+    max-width: rem(940px);
     @include tablets {
         flex-direction: column;
     }
@@ -180,6 +183,8 @@
     text-transform: uppercase;
     line-height: rem(66px);
     @include phones {
+        padding-right: rem(85px);
+        padding-left: rem(85px);
         font-size: rem(36px);
     }
 }
@@ -190,6 +195,10 @@
     font-size: rem(14px);
     color: white;
     line-height: rem(24px);
+    @include phones {
+        padding-right: rem(20px);
+        padding-left: rem(20px);
+    }
 }
 
 .burger-price--amount {
@@ -208,16 +217,24 @@
 }
 
 .slider {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
+    @include tablets {
+        margin-top: rem(70px);
+    }
+    @include phones {
+        margin-top: rem(30px);
+    }
 }
 
 .slider--left {
+    position: absolute;
+    left: 0;
     padding-left: 2.5%;
 }
 
 .slider--right {
+    position: absolute;
+    right: 0;
     padding-right: 2.5%;
 }
 

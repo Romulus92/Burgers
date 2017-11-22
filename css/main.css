@@ -692,7 +692,9 @@ ul {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
-  justify-content: center; }
+  justify-content: center;
+  max-width: 68.75rem;
+  position: relative; }
 
 .burgers__content {
   display: -webkit-box;
@@ -703,7 +705,8 @@ ul {
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
-  flex-direction: row; }
+  flex-direction: row;
+  max-width: 58.75rem; }
   @media screen and (max-width: 768px) {
     .burgers__content {
       -webkit-box-orient: vertical;
@@ -915,6 +918,8 @@ ul {
   line-height: 4.125rem; }
   @media screen and (max-width: 480px) {
     .burger-description__heading {
+      padding-right: 5.3125rem;
+      padding-left: 5.3125rem;
       font-size: 2.25rem; } }
 
 .burger-description__text {
@@ -923,6 +928,10 @@ ul {
   font-size: 0.875rem;
   color: white;
   line-height: 1.5rem; }
+  @media screen and (max-width: 480px) {
+    .burger-description__text {
+      padding-right: 1.25rem;
+      padding-left: 1.25rem; } }
 
 .burger-price--amount {
   font-size: 4.5rem;
@@ -938,23 +947,22 @@ ul {
   margin-right: 30px; }
 
 .slider {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
+  display: block; }
+  @media screen and (max-width: 768px) {
+    .slider {
+      margin-top: 4.375rem; } }
+  @media screen and (max-width: 480px) {
+    .slider {
+      margin-top: 1.875rem; } }
 
 .slider--left {
+  position: absolute;
+  left: 0;
   padding-left: 2.5%; }
 
 .slider--right {
+  position: absolute;
+  right: 0;
   padding-right: 2.5%; }
 
 .slider__img {
