@@ -1,3 +1,14 @@
+//slick-slider
+
+$(document).ready(function() {
+    $('.burger-list').slick({
+        fade: true,
+        nextArrow: $('.slider--left'),
+        prevArrow: $('.slider--right')
+    });
+
+});
+
 //burger-menu functionality
 
 $(function() {

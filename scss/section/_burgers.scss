@@ -1,19 +1,23 @@
 .burgers {
     display: flex;
+    position: relative;
     background-image: linear-gradient(#f9b43b, #ec8f38, #f9b43b);
 }
 
 .burgers__container {
     align-items: center;
     justify-content: center;
-    max-width: rem(1100px);
+    max-width: rem(940px);
     position: relative;
+    vertical-align: center;
 }
 
 .burgers__content {
     display: flex;
     flex-direction: row;
     max-width: rem(940px);
+    position: relative;
+    overflow: hidden;
     @include tablets {
         flex-direction: column;
     }
@@ -116,6 +120,8 @@
 }
 
 .burger-description {
+    display: inline-block;
+    overflow: initial;
     width: 50%;
     @include tablets {
         width: 100%;
@@ -128,7 +134,7 @@
 }
 
 .burger-pictire__img {
-    width: rem(460px);
+    width: 100%;
     @include tablets {
         width: rem(400px);
     }
@@ -182,6 +188,7 @@
     font-family: 'Gagalin', Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     line-height: rem(66px);
+    width: 100%;
     @include phones {
         padding-right: rem(85px);
         padding-left: rem(85px);
@@ -195,6 +202,7 @@
     font-size: rem(14px);
     color: white;
     line-height: rem(24px);
+    width: 100%;
     @include phones {
         padding-right: rem(20px);
         padding-left: rem(20px);
@@ -229,13 +237,15 @@
 .slider--left {
     position: absolute;
     left: 0;
-    padding-left: 2.5%;
+    top: 50%;
+    padding-left: 2%;
 }
 
 .slider--right {
     position: absolute;
     right: 0;
-    padding-right: 2.5%;
+    top: 50%;
+    padding-right: 2%;
 }
 
 .slider__img {
@@ -250,4 +260,16 @@
 
 .slider__img--right {
     transform: rotate(270deg);
+}
+
+.burger-item {
+    display: inline-block;
+    white-space: initial;
+    max-width: rem(940px);
+}
+
+.burger-list {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
 }

@@ -679,6 +679,7 @@ ul {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f9b43b), color-stop(#ec8f38), to(#f9b43b));
   background-image: -webkit-linear-gradient(#f9b43b, #ec8f38, #f9b43b);
   background-image: -o-linear-gradient(#f9b43b, #ec8f38, #f9b43b);
@@ -693,8 +694,9 @@ ul {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  max-width: 68.75rem;
-  position: relative; }
+  max-width: 58.75rem;
+  position: relative;
+  vertical-align: center; }
 
 .burgers__content {
   display: -webkit-box;
@@ -706,7 +708,9 @@ ul {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  max-width: 58.75rem; }
+  max-width: 58.75rem;
+  position: relative;
+  overflow: hidden; }
   @media screen and (max-width: 768px) {
     .burgers__content {
       -webkit-box-orient: vertical;
@@ -844,6 +848,8 @@ ul {
   text-transform: uppercase; }
 
 .burger-description {
+  display: inline-block;
+  overflow: initial;
   width: 50%; }
   @media screen and (max-width: 768px) {
     .burger-description {
@@ -854,7 +860,7 @@ ul {
   margin-top: 4.6875rem; }
 
 .burger-pictire__img {
-  width: 28.75rem; }
+  width: 100%; }
   @media screen and (max-width: 768px) {
     .burger-pictire__img {
       width: 25rem; } }
@@ -915,7 +921,8 @@ ul {
   color: white;
   font-family: 'Gagalin', Arial, Helvetica, sans-serif;
   text-transform: uppercase;
-  line-height: 4.125rem; }
+  line-height: 4.125rem;
+  width: 100%; }
   @media screen and (max-width: 480px) {
     .burger-description__heading {
       padding-right: 5.3125rem;
@@ -927,7 +934,8 @@ ul {
   font-weight: 300;
   font-size: 0.875rem;
   color: white;
-  line-height: 1.5rem; }
+  line-height: 1.5rem;
+  width: 100%; }
   @media screen and (max-width: 480px) {
     .burger-description__text {
       padding-right: 1.25rem;
@@ -958,12 +966,14 @@ ul {
 .slider--left {
   position: absolute;
   left: 0;
-  padding-left: 2.5%; }
+  top: 50%;
+  padding-left: 2%; }
 
 .slider--right {
   position: absolute;
   right: 0;
-  padding-right: 2.5%; }
+  top: 50%;
+  padding-right: 2%; }
 
 .slider__img {
   display: -webkit-box;
@@ -982,6 +992,16 @@ ul {
   -webkit-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
   transform: rotate(270deg); }
+
+.burger-item {
+  display: inline-block;
+  white-space: initial;
+  max-width: 58.75rem; }
+
+.burger-list {
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%; }
 
 .team {
   height: 100vh;
