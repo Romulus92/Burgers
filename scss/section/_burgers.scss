@@ -226,6 +226,7 @@
 
 .slider {
     display: block;
+    cursor: pointer;
     @include tablets {
         margin-top: rem(70px);
     }

@@ -2,6 +2,7 @@
 
 $(document).ready(function() {
     $('.burger-list').slick({
+        draggable: false,
         fade: true,
         nextArrow: $('.slider--left'),
         prevArrow: $('.slider--right')
