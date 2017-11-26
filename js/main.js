@@ -5,7 +5,6 @@ $(document).ready(function() {
         anchors: ['hero', 'best', 'burgers', 'team', 'menu', 'reviews', 'order', 'contacts'],
         menu: '#pagination',
         responsiveWidth: 768,
-        responsiveHeight: 1024
     });
 });
 
