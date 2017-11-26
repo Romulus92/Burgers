@@ -131,6 +131,9 @@ ul {
 .popup {
   display: none; }
 
+#send {
+  display: none; }
+
 .pagination {
   position: fixed;
   top: 5.625rem;
