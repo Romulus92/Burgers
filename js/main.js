@@ -4,7 +4,8 @@ $(document).ready(function() {
     $('.maincontent').fullpage({
         anchors: ['hero', 'best', 'burgers', 'team', 'menu', 'reviews', 'order', 'contacts'],
         menu: '#pagination',
-        responsiveWidth: 651
+        responsiveWidth: 768,
+        responsiveHeight: 1024
     });
 });
 
