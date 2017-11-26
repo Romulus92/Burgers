@@ -78,6 +78,9 @@
 
 .team__about {
     margin-left: rem(20px);
+    @include tablets {
+        margin-left: 0;
+    }
 }
 
 .team__occupation {
@@ -99,6 +102,7 @@
     line-height: rem(24px);
     @include tablets {
         width: 100%;
+        height: rem(130px);
     }
 }
 

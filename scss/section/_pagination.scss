@@ -12,7 +12,7 @@
     flex-direction: column;
 }
 
-.pagination__item {
+.pagination__dot {
     margin-bottom: rem(16px);
     content: "";
     width: rem(6px);
@@ -22,7 +22,12 @@
     position: relative;
 }
 
-.pagination__item--active {
+.pagination__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.active .pagination__dot {
     &::after {
         content: '';
         border-radius: 50%;

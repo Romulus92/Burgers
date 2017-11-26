@@ -1,3 +1,13 @@
+//fullpage scroll
+
+$(document).ready(function() {
+    $('.maincontent').fullpage({
+        anchors: ['hero', 'best', 'burgers', 'team', 'menu', 'reviews', 'order', 'contacts'],
+        menu: '#pagination'
+    });
+});
+
+
 //slick-slider
 
 $(document).ready(function() {

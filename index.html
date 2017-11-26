@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/jquery.fancybox.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="css/jquery.fullpage.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -22,27 +23,27 @@
                 <div class="container hero__container">
                     <header class="header">
                         <div class="header__logo">
-                            <a class="logo" href="#"><img class="logo__img" src="img/logo.svg" alt="logo"></a>
+                            <a class="logo" href="#hero"><img class="logo__img" src="img/logo.svg" alt="logo"></a>
                         </div>
                         <div class="header__menu">
                             <nav class="nav">
                                 <ul class="nav__list">
-                                    <li class="nav__item"><a class="nav__link" href="" data-goto="1">о нас</a>
+                                    <li class="nav__item"><a class="nav__link" href="#best" data-goto="1">о нас</a>
                                     </li>
-                                    <li class="nav__item"><a class="nav__link" href="" data-goto="2">бургеры</a>
+                                    <li class="nav__item"><a class="nav__link" href="#burgers" data-goto="2">бургеры</a>
                                     </li>
-                                    <li class="nav__item"><a class="nav__link" href="" data-goto="3">команда</a>
+                                    <li class="nav__item"><a class="nav__link" href="#team" data-goto="3">команда</a>
                                     </li>
-                                    <li class="nav__item"><a class="nav__link" href="" data-goto="4">меню</a>
+                                    <li class="nav__item"><a class="nav__link" href="#menu" data-goto="4">меню</a>
                                     </li>
-                                    <li class="nav__item"><a class="nav__link" href="" data-goto="5">отзывы</a>
+                                    <li class="nav__item"><a class="nav__link" href="#reviews" data-goto="5">отзывы</a>
                                     </li>
-                                    <li class="nav__item"><a class="nav__link" href="" data-goto="7">контакты</a>
+                                    <li class="nav__item"><a class="nav__link" href="#contacts" data-goto="7">контакты</a>
                                     </li>
                                 </ul>
                             </nav>
                         </div>
-                        <div class="header__btn"><a class="order-link" href="" data-goto="6">Заказать</a></div>
+                        <div class="header__btn"><a class="order-link" href="#order" data-goto="6">Заказать</a></div>
                         <a class="hamburger-menu-link" id="hamburger-menu-link--onclick">
                             <div class="hamburger-menu-link__bars"></div>
                         </a>
@@ -59,22 +60,22 @@
                             </div>
                             <ul class="hamburger-menu__list">
                                 <li class="hamburger-menu__item">
-                                    <a href="" class="hamburger-menu__linktext">Почему мы</a>
+                                    <a href="#best" class="hamburger-menu__linktext">Почему мы</a>
                                 </li>
                                 <li class="hamburger-menu__item">
-                                    <a href="" class="hamburger-menu__linktext">Меню</a>
+                                    <a href="#burgers" class="hamburger-menu__linktext">Бургеры</a>
                                 </li>
                                 <li class="hamburger-menu__item">
-                                    <a href="" class="hamburger-menu__linktext">Советы</a>
+                                    <a href="#team" class="hamburger-menu__linktext">Кто мы</a>
                                 </li>
                                 <li class="hamburger-menu__item">
-                                    <a href="" class="hamburger-menu__linktext">Кто мы</a>
+                                    <a href="#menu" class="hamburger-menu__linktext">Меню</a>
                                 </li>
                                 <li class="hamburger-menu__item">
-                                    <a href="" class="hamburger-menu__linktext">Свяжитесь с нами</a>
+                                    <a href="#order" class="hamburger-menu__linktext">Свяжитесь с нами</a>
                                 </li>
                                 <li class="hamburger-menu__item">
-                                    <a href="" class="hamburger-menu__linktext">Контакты</a>
+                                    <a href="#contacts" class="hamburger-menu__linktext">Контакты</a>
                                 </li>
                             </ul>
                         </div>
@@ -323,188 +324,6 @@
                                 </div>
                             </div>
                         </li>
-                        <!-- <li class="burger-item">
-                            <div class="burgers__content">
-                                <div class="burger-feature">
-                                    <div class="burger-composition">
-                                        <div class="burger-composition__icon">
-                                            <svg class="burger-composition__img" style="fill: #fff">
-                                                        <use xlink:href="img/sprite.svg#burger"></use>
-                                                    </svg>
-                                        </div>
-                                        <div class="burger-composition__text">Состав</div>
-                                    </div>
-                                    <div class="burger-ingredients">
-                                        <ul class="burger-ingredients__list">
-                                            <li class="burger-ingredients_item burger-ingredients_item--first">
-                                                <div class="burger-ingredients__picture">
-                                                    <svg class="burger-ingredients__picture--img" style="fill: #e25028">
-                                                                <use xlink:href="img/sprite.svg#beef"></use>
-                                                            </svg>
-                                                </div>
-                                                <span class="burger-ingredients__heading">Говядина</span>
-                                                <span class="burger-ingredients__amount">300г.</span>
-                                            </li>
-                                            <li class="burger-ingredients_item">
-                                                <div class="burger-ingredients__picture">
-                                                    <svg class="burger-ingredients__picture--img" style="fill: #f8b43a">
-                                                                <use xlink:href="img/sprite.svg#buns"></use>
-                                                            </svg>
-                                                </div>
-                                                <span class="burger-ingredients__heading">Булочки</span>
-                                                <span class="burger-ingredients__amount">100г.</span>
-                                            </li>
-                                            <li class="burger-ingredients_item">
-                                                <div class="burger-ingredients__picture">
-                                                    <svg class="burger-ingredients__picture--img" style="fill: #8ac03e">
-                                                                <use xlink:href="img/sprite.svg#salad"></use>
-                                                            </svg>
-                                                </div>
-                                                <span class="burger-ingredients__heading">Зелень</span>
-                                                <span class="burger-ingredients__amount">70г.</span>
-                                            </li>
-                                            <li class="burger-ingredients_item">
-                                                <div class="burger-ingredients__picture">
-                                                    <svg class="burger-ingredients__picture--img" style="fill: #e25028">
-                                                                <use xlink:href="img/sprite.svg#sauce"></use>
-                                                            </svg>
-                                                </div>
-                                                <span class="burger-ingredients__heading">Соус</span>
-                                                <span class="burger-ingredients__amount">150г.</span>
-                                            </li>
-                                            <li class="burger-ingredients_item">
-                                                <div class="burger-ingredients__picture">
-                                                    <svg class="burger-ingredients__picture--img" style="fill: #8ac03e">
-                                                                <use xlink:href="img/sprite.svg#cucumber"></use>
-                                                            </svg>
-                                                </div>
-                                                <span class="burger-ingredients__heading">Овощи</span>
-                                                <span class="burger-ingredients__amount">200г.</span>
-                                            </li>
-                                            <li class="burger-ingredients_item">
-                                                <div class="burger-ingredients__picture">
-                                                    <svg class="burger-ingredients__picture--img" style="fill: #f8b43a">
-                                                                <use xlink:href="img/sprite.svg#cheese"></use>
-                                                            </svg>
-                                                </div>
-                                                <span class="burger-ingredients__heading">Сыр</span>
-                                                <span class="burger-ingredients__amount">80г.</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="burger-picture">
-                                        <img src="img/content/black_burger.png" alt="" class="burger-pictire__img">
-                                    </div>
-                                    <div class="burger-energy">
-                                        <div class="burger-energy__icon">
-                                            <svg class="burger-energy__img" style="fill: #fff">
-                                                                            <use xlink:href="img/sprite.svg#kkal"></use>
-                                                                        </svg>
-                                        </div>
-                                        <span class="burger-energy__number">1200</span>
-                                        <span class="burger-energy__amount">ккал</span>
-                                    </div>
-                                </div>
-                                <div class="burger-description">
-                                    <h2 class="burger-description__heading">Dark BEEF Burger</h2>
-                                    <p class="burger-description__text">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</p>
-                                    <span class="burger-price--amount">500</span>
-                                    <span class="burger-price--currency">рублей</span>
-                                    <a class="order-link" href="#">Заказать</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="burger-item">
-                            <div class="burgers__content">
-                                <div class="burger-feature">
-                                    <div class="burger-composition">
-                                        <div class="burger-composition__icon">
-                                            <svg class="burger-composition__img" style="fill: #fff">
-                                                            <use xlink:href="img/sprite.svg#burger"></use>
-                                                        </svg>
-                                        </div>
-                                        <div class="burger-composition__text">Состав</div>
-                                    </div>
-                                    <div class="burger-ingredients">
-                                        <ul class="burger-ingredients__list">
-                                            <li class="burger-ingredients_item burger-ingredients_item--first">
-                                                <div class="burger-ingredients__picture">
-                                                    <svg class="burger-ingredients__picture--img" style="fill: #e25028">
-                                                                    <use xlink:href="img/sprite.svg#beef"></use>
-                                                                </svg>
-                                                </div>
-                                                <span class="burger-ingredients__heading">Говядина</span>
-                                                <span class="burger-ingredients__amount">300г.</span>
-                                            </li>
-                                            <li class="burger-ingredients_item">
-                                                <div class="burger-ingredients__picture">
-                                                    <svg class="burger-ingredients__picture--img" style="fill: #f8b43a">
-                                                                    <use xlink:href="img/sprite.svg#buns"></use>
-                                                                </svg>
-                                                </div>
-                                                <span class="burger-ingredients__heading">Булочки</span>
-                                                <span class="burger-ingredients__amount">100г.</span>
-                                            </li>
-                                            <li class="burger-ingredients_item">
-                                                <div class="burger-ingredients__picture">
-                                                    <svg class="burger-ingredients__picture--img" style="fill: #8ac03e">
-                                                                    <use xlink:href="img/sprite.svg#salad"></use>
-                                                                </svg>
-                                                </div>
-                                                <span class="burger-ingredients__heading">Зелень</span>
-                                                <span class="burger-ingredients__amount">70г.</span>
-                                            </li>
-                                            <li class="burger-ingredients_item">
-                                                <div class="burger-ingredients__picture">
-                                                    <svg class="burger-ingredients__picture--img" style="fill: #e25028">
-                                                                    <use xlink:href="img/sprite.svg#sauce"></use>
-                                                                </svg>
-                                                </div>
-                                                <span class="burger-ingredients__heading">Соус</span>
-                                                <span class="burger-ingredients__amount">150г.</span>
-                                            </li>
-                                            <li class="burger-ingredients_item">
-                                                <div class="burger-ingredients__picture">
-                                                    <svg class="burger-ingredients__picture--img" style="fill: #8ac03e">
-                                                                    <use xlink:href="img/sprite.svg#cucumber"></use>
-                                                                </svg>
-                                                </div>
-                                                <span class="burger-ingredients__heading">Овощи</span>
-                                                <span class="burger-ingredients__amount">200г.</span>
-                                            </li>
-                                            <li class="burger-ingredients_item">
-                                                <div class="burger-ingredients__picture">
-                                                    <svg class="burger-ingredients__picture--img" style="fill: #f8b43a">
-                                                                    <use xlink:href="img/sprite.svg#cheese"></use>
-                                                                </svg>
-                                                </div>
-                                                <span class="burger-ingredients__heading">Сыр</span>
-                                                <span class="burger-ingredients__amount">80г.</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="burger-picture">
-                                        <img src="img/content/black_burger.png" alt="" class="burger-pictire__img">
-                                    </div>
-                                    <div class="burger-energy">
-                                        <div class="burger-energy__icon">
-                                            <svg class="burger-energy__img" style="fill: #fff">
-                                                                                <use xlink:href="img/sprite.svg#kkal"></use>
-                                                                            </svg>
-                                        </div>
-                                        <span class="burger-energy__number">1200</span>
-                                        <span class="burger-energy__amount">ккал</span>
-                                    </div>
-                                </div>
-                                <div class="burger-description">
-                                    <h2 class="burger-description__heading">Dark BEEF Burger</h2>
-                                    <p class="burger-description__text">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</p>
-                                    <span class="burger-price--amount">500</span>
-                                    <span class="burger-price--currency">рублей</span>
-                                    <a class="order-link" href="#">Заказать</a>
-                                </div>
-                            </div>
-                        </li> -->
                     </ul>
                 </div>
                 <div class="slider slider--right">
@@ -859,15 +678,31 @@
         </div>
     </div>
     <section class="pagination">
-        <ul class="pagination__list">
-            <li class="pagination__item pagination__item--active"></li>
-            <li class="pagination__item"></li>
-            <li class="pagination__item"></li>
-            <li class="pagination__item"></li>
-            <li class="pagination__item"></li>
-            <li class="pagination__item"></li>
-            <li class="pagination__item"></li>
-            <li class="pagination__item"></li>
+        <ul class="pagination__list" id='pagination'>
+            <li class="pagination__item" data-menuanchor='hero'>
+                <a class="pagination__dot" href="#hero"></a>
+            </li>
+            <li class="pagination__item" data-menuanchor='best'>
+                <a class="pagination__dot" href="#best"></a>
+            </li>
+            <li class="pagination__item" data-menuanchor='burgers'>
+                <a class="pagination__dot" href="#burgers"></a>
+            </li>
+            <li class="pagination__item" data-menuanchor='team'>
+                <a class="pagination__dot" href="#team"></a>
+            </li>
+            <li class="pagination__item" data-menuanchor='menu'>
+                <a class="pagination__dot" href="#menu"></a>
+            </li>
+            <li class="pagination__item" data-menuanchor='reviews'>
+                <a class="pagination__dot" href="#reviews"></a>
+            </li>
+            <li class="pagination__item" data-menuanchor='order'>
+                <a class="pagination__dot" href="#order"></a>
+            </li>
+            <li class="pagination__item" data-menuanchor='contacts'>
+                <a class="pagination__dot" href="#contacts"></a>
+            </li>
         </ul>
     </section>
 
@@ -887,6 +722,7 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="slick/slick.min.js"></script>
+    <script src="js/jquery.fullpage.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
