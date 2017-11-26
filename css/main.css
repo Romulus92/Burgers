@@ -1893,3 +1893,7 @@ ul {
 .contacts__link-phone {
   width: 0.75rem;
   height: 0.6875rem; }
+
+.yandex-map {
+  height: 100%;
+  overflow: hidden; }

@@ -156,3 +156,38 @@ $(function() {
         $.fancybox.close()
     })
 })
+
+//map
+$(function() {
+    ymaps.ready(init);
+    var myMap
+    myPlacemark1;
+
+    function init() {
+        myMap = new ymaps.Map("map", {
+            center: [54.73999391, 55.98245766],
+            zoom: 16
+        });
+
+        myMap.behaviors.disable([
+            'scrollZoom'
+        ]);
+
+        myPin = new ymaps.GeoObjectCollection({}, {
+            iconLayout: 'default#image',
+            iconImageHref: 'img/marker.png',
+            iconImageSize: [46, 57],
+            iconImageOffset: [-3, -42]
+        });
+
+        myPlacemark1 = new ymaps.Placemark([54.74089089, 55.99222626], {
+            balloonContentHeader: 'Лучшая в Уфе бургерная',
+            balloonContentBody: 'Ждем вас каждый день с 10.00 до 22.00',
+            balloonContentFooter: 'ул.Бессонова',
+            hintContent: 'Бургерная'
+        });
+
+        myPin.add(myPlacemark1);
+        myMap.geoObjects.add(myPin);
+    }
+})
