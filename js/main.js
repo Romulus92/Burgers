@@ -95,8 +95,10 @@ $(function() {
         const item = $this.closest('.menu__item')
         const items = $('.menu__item', container)
         const occupation = $('.menu__occupation', item)
+        const occupations = $('.menu__occupation', container)
         const otherContent = $('.menu__occupation', container)
-        const reqWidth = "540px"
+        const occupationActive = $('menu__occupation--active')
+        const reqWidth = occupationActive.width();
         const textBlock = $('.menu__text', item)
         const otherTextBlocks = $('.menu__text', container)
 
@@ -104,14 +106,11 @@ $(function() {
 
         if (!item.hasClass('menu__item--active')) {
             items.removeClass('menu__item--active')
+            occupations.removeClass('menu__occupation--active')
             item.addClass('menu__item--active')
+            occupation.addClass('menu__occupation--active')
 
-            otherContent.css({
-                "width": 0
-            })
-            occupation.css({
-                "width": reqWidth
-            })
+
 
             otherTextBlocks.css({
                 "display": "none"
@@ -124,10 +123,7 @@ $(function() {
 
         } else {
             item.removeClass('menu__item--active')
-
-            occupation.css({
-                'width': 0
-            })
+            occupation.removeClass('menu__occupation--active')
 
             textBlock.css({
                 "display": "none"

@@ -27,6 +27,7 @@
 .menu__content {
     display: flex;
     justify-content: flex-end;
+    z-index: 100;
 }
 
 .menu__item {
@@ -42,6 +43,9 @@
     justify-content: space-around;
     width: rem(80px);
     cursor: pointer;
+    @include phones {
+        width: rem(52px);
+    }
 }
 
 .menu__title--meat {
@@ -86,6 +90,16 @@
     padding: rem(61px) rem(35px) rem(50px) rem(34px);
 }
 
-.menu__item--active .menu__occupation {
-    width: rem(540px);
+.menu__occupation--active {
+    width: rem(579px);
+    @include tablets {
+        width: rem(352px);
+    }
+    @include phones {
+        width: rem(242px);
+    }
+}
+
+.menu__item--active.menu__heading {
+    display: none;
 }
