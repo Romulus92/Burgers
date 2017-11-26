@@ -68,9 +68,11 @@
     transform: rotate(180deg);
     font-family: 'Gagalin', Arial, Helvetica, sans-serif;
     font-size: rem(40px);
-    line-height: rem(64px);
     color: white;
     text-align: center;
+    @include tablets {
+        font-size: rem(28px);
+    }
 }
 
 .menu__occupation {
