@@ -792,7 +792,7 @@ ul {
   .burger-composition:hover {
     background: #e35028; }
   .burger-composition:hover + .burger-ingredients {
-    opacity: 1; }
+    visibility: visible; }
 
 .burger-composition__img {
   width: 2.8125rem;
@@ -806,10 +806,12 @@ ul {
   top: 0;
   left: 5.625rem;
   border-radius: 5px;
-  opacity: 0;
+  visibility: hidden;
   -webkit-transition: background-color 0.2s ease-in-out;
   -o-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out; }
+  .burger-ingredients:hover {
+    visibility: visible; }
 
 .burger-ingredients_item {
   display: -webkit-box;
@@ -1016,7 +1018,9 @@ ul {
 .burger-list {
   white-space: nowrap;
   overflow: hidden;
-  width: 100%; }
+  width: 100%;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem; }
 
 .team {
   height: 100vh;
