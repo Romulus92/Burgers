@@ -1469,6 +1469,9 @@ ul {
 
 #full-review {
   width: 28.75rem; }
+  @media screen and (max-width: 480px) {
+    #full-review {
+      width: 17.5rem; } }
 
 .full-review__heading {
   font-size: 0.875rem;

@@ -150,6 +150,9 @@
 
 #full-review {
     width: rem(460px);
+    @include phones {
+        width: rem(280px);
+    }
 }
 
 .full-review__heading {
