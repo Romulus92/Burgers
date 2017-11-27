@@ -127,11 +127,8 @@
     @include tablets {
         flex-direction: column;
         width: initial;
+        align-items: center;
     }
-}
-
-.team__item--active .team__description {
-    align-items: center;
 }
 
 .team__item--active .team__name {

@@ -445,7 +445,8 @@ ul {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  overflow: hidden; }
+  overflow: hidden;
+  height: 100vh; }
 
 .hamburger-menu__header {
   display: -webkit-box;
@@ -1157,13 +1158,11 @@ ul {
       -webkit-flex-direction: column;
       -ms-flex-direction: column;
       flex-direction: column;
-      width: initial; } }
-
-.team__item--active .team__description {
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center; }
+      width: initial;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; } }
 
 .team__item--active .team__name {
   color: #f9b43b; }
